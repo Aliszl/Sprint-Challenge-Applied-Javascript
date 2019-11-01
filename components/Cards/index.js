@@ -65,10 +65,6 @@ function createCard(headline, authorPhoto, authorName) {
 
 
     // 4- Add some content!
-    // headLine.textContent = data.articles.javascript.headline;
-    // authorImg.setAttribute('href', data.articles.javascript.authorPhoto);
-    // authorImg.textContent = data.articles.javascript.authorPhoto;
-    // Name.textContent = data.articles.javascript.authorName;
     headLine.textContent = headline;
     authorImg.setAttribute('src', authorPhoto);
     authorImg.textContent = authorPhoto;
@@ -79,31 +75,8 @@ function createCard(headline, authorPhoto, authorName) {
 
 // Create cards and populate with data from authorArray
 const newCard = document.querySelector('.cards-container');
+
+// Ensure you have picked up correct div by class name toappend HTML
 console.log(newCard);
-// test 
-// newCard.append(createCard(authorArray[0].headline, authorArray[0].headline, dummy3));
-authorArray.forEach(args => {
-    newCard.append(createCard(args.headline, args.authorPhoto, args.authorName));
-
-})
-// Failed code
-// .then((array) => {
-
-//     for (let i = 0; i < authorArray.length; i++) {
-//         let search = 'https://lambda-times-backend.herokuapp.com/articles/javascript/';
-//         search += array[i];
-//         axios.get(search);
-//         console.log(search);
-//         // .then((X) =>{
-//         //     newCard.append(createCard(X.data));
-//         // })
-//         // const newCard = document.querySelector('.cards-container');
-//     }
-
-// })
 
 
-// const newCard = document.querySelector('.cards-container');
-// newCard.append(createCard(cardInfo));
-//             });
-//  console.log(response.data.articles.bootstrap);
