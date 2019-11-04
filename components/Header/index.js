@@ -32,7 +32,7 @@ temperature.classList.add('temp');
  LambdaTimesTitle.textContent = title;
  temperature.textContent = temp;
 // 5- Add functionality
-console.log(pageHeader);
+// console.log(pageHeader);
     return pageHeader;
 }
 const lambdaTimesHeader = document.querySelector('.header-container');
